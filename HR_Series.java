@@ -25,21 +25,22 @@ public class HR_Series {
                 if (n >= 0 && n <= 15) {
                     n = n;
                 }
+                double Formula=a + (Math.pow(2, n) * b);
 
                 for (int k=0;k<=n-1;k++){
 
 
-
-                    double Formula= a + (Math.pow(2, k) * b);
-
+                    if (k==0) {
+                        Formula = a + (Math.pow(2, k) * b);
+                    }
+                    Formula=Formula;
                      if (k>=1){
-                         Formula=Formula+(Math.pow(2, k) * b);
+                        Formula=Formula+(Math.pow(2, k) * b);
                     }
 
-
-                    System.out.print(Formula+" ");
+                   System.out.print((int)(Formula)+" ");
                 }
-
+                System.out.println();
             }
         }
 
